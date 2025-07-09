@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 90%;
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 24px;
+      color: #666;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #4a90e2;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #357ABD;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>환영합니다!</h1>
+    <p>이 페이지는 페이지 이동 시스템이 작동하여 만들어 졌습니다.</p>
+    <a class="button" href="#">시작하기</a>
+  </div>
+
+
+</body></html>
